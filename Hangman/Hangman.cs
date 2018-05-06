@@ -56,7 +56,7 @@ namespace HangmanGame
         {
             bool isOver = false;
 
-            if (NumberOfGuesses == 0 || FoundWord())
+            if (NumberOfRemainingGuesses() <= 0 || FoundWord())
             {
                 isOver = true;
             }
@@ -92,6 +92,31 @@ namespace HangmanGame
             }
 
             return hasFoundWord;
+        }
+
+        public bool Loop()
+        {
+            //Setup Game
+            //Play Game
+            return false;
+        }
+
+        public bool PlayGame()
+        {
+            // TODO Outputs to concole current guesses, found letters, and remaing free guesses
+            // Guess letters (win/lose)
+            // Validation checks?
+
+            return false;   
+        }
+
+        public bool SetupGame(string word, Enums.Difficulty difficulty)
+        {
+            //enter word
+            //enter difficulty
+            //check values
+
+            return false;
         }
     }
 }

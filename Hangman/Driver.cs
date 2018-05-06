@@ -10,7 +10,7 @@ namespace HangmanGame
 
             Hangman game = new Hangman();
 
-            // TODO Game loop
+            // TODO game.Loop();
 
             Console.ReadLine();
         }
